@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timeless Partners</title>
+  <meta name="description" content="Landing page moderna inspirada en Jeton: animaciones, navegación inferior fija y formulario de contacto listo para adaptar." />
+  <meta name="theme-color" content="#e4416d" />
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+
+  <!-- Fuente limpia y moderna (Altone) -->
+  <link rel="preload" href="fonts/Altone-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Altone-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Librería de animación al hacer scroll (AOS) solo para parte visual del cliente -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header class="bottom-nav" role="navigation" aria-label="Navegación principal">
+    <div class="bottom-nav__inner container">
+      <!-- Marca/Logo a la izquierda -->
+      <a class="brand" href="index.html#home" aria-label="Inicio">
+        <img src="./assets/HORIZONTAL_BLANCO.svg" alt="Logo" width="200" height="40" />
+      </a>
+
+      <!-- Menú de navegación (escritorio) -->
+      <nav class="menu" aria-label="Secciones">
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#features">¿Qué hacemos?</a>
+        <a href="index.html#clientes">Clientes</a>
+        <a href="index.html#cobertura">Cobertura</a>
+        <a href="index.html#contact">Contacto</a>
+      </nav>
+
+      <!-- CTA a la derecha (puedes apuntar a registro propio o a otra ruta) -->
+      <div class="cta">
+        <a class="btn btn--primary" href="index.html#contact" role="button" aria-label="Empezar ahora">¡Quiero crecer mi marca!</a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 🔹 Cajón lateral móvil (fuera del header) -->
+  <div id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú móvil" aria-hidden="true">
+    <div class="drawer-content">
+      <nav class="drawer-menu">
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#features">¿Qué hacemos?</a>
+        <a href="index.html#clientes">Clientes</a>
+        <a href="index.html#cobertura">Cobertura</a>
+        <a href="index.html#contact">Contacto</a>
+        <a class="btn btn--primary" href="index.html#contact">¡Quiero crecer mi marca!</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ====================================
+       CONTENIDO PRINCIPAL
+  ===================================== -->
+<main id="home" class="main">   
+    <section id="cookies" class="cookies section" data-aos="fade-up">
+        <header class="section__header">
+          <br><br><h2><span class="highlight">Política de Cookies.</span></h2>
+        </header>
+      <div class="grid cookies">
+
+        <div class="cookies_text">
+          <p>En cumplimiento con lo establecido por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), Aila Energy informa a los usuarios que este sitio web utiliza cookies para mejorar la experiencia de navegación, analizar el tráfico y ofrecer contenidos personalizados.</p>
+          <h3><span class="highlight">¿Qué son las cookies?</span></h3>
+          <p>Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario al acceder a un sitio web. Permiten recordar información sobre su visita, como idioma preferido, configuración del navegador o comportamiento de navegación.</p>
+          <h3><span class="highlight">Tipos de cookies utilizadas</span></h3>
+          <ul>
+            <li><strong>Cookies técnicas:</strong> necesarias para el funcionamiento del sitio y la prestación de servicios solicitados por el usuario.</li>
+            <br><li><strong>Cookies de análisis:</strong> permiten medir y analizar el comportamiento de los visitantes para mejorar el contenido y la estructura del sitio.</li>
+            <br><li><strong>Cookies de personalización:</strong> almacenan preferencias del usuario para ofrecer una experiencia más personalizada.</li>
+            <br><li><strong>Cookies publicitarias:</strong> gestionan espacios publicitarios y muestran anuncios relevantes según los intereses del usuario (si aplica).</li>
+          </ul>
+          <h3><span class="highlight">Gestión de cookies</span></h3>
+          <p>El usuario puede configurar su navegador para aceptar o rechazar cookies, así como para eliminar las ya instaladas. La desactivación de ciertas cookies puede afectar el funcionamiento del sitio.</p>
+          <p>Para más información sobre cómo gestionar cookies en su navegador:</p>
+          <ul>
+            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" class="link">Google Chrome</a></li>
+            <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies" target="_blank" class="link">Mozilla Firefox</a></li>
+            <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" class="link">Microsoft Edge</a></li>
+          </ul>
+          <h3><span class="highlight">Consentimiento</span></h3>
+          <p>Al continuar navegando en este sitio, el usuario acepta el uso de cookies conforme a esta política. En cualquier momento puede retirar su consentimiento modificando la configuración de su navegador.</p>
+        </div>
+        <div class="cookies_svg">
+          <img src="assets/images/cookie.svg" alt="Cookies" class="svg">
+        </div>
+      </div>
+    </section>
+
+</main>
+  <!-- ====================================
+       FOOTER COMPLETO
+  ===================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="#home">
+          <img src="./assets/HORIZONTAL_BLANCO.svg" alt="Logo" width="200" height="40" />   
+        </a> 
+        <p class="footer-text">Tu crecimiento es nuestro objetivo <strong>¡Escalemos juntos!</strong></p>
+        <p class="footer-text"></p>
+        <small>© <span id="year"></span> Timeless Partners. Todos los derechos reservados.</small>
+      </div>
+      <nav aria-label="Footer menús" class="footer-cols">
+        <div>
+          <h4>Producto</h4>
+          <ul>
+            <li><a href="index.html#features">¿Qué hacemos?</a></li>
+            <li><a href="index.html#productos">Productos y Categorías</a></li>
+            <li><a href="index.html#Como">¿Cómo lo hacemos?</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#clientes">Clientes</a></li>
+            <li><a href="index.html#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terminos.html">Términos</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+    <!-- Banner de Cookies -->
+  <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #f5f5f5; padding: 15px; box-shadow: 0 -2px 5px rgba(0,0,0,0.1); z-index: 9999; font-family: sans-serif; display: none;">
+    <div style="max-width: 960px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+      <div style="flex: 1 1 70%; font-size: 14px; color: #333;">
+        Este sitio utiliza cookies para mejorar su experiencia de navegación y analizar el tráfico. Al continuar, acepta su uso. Consulte nuestra <a href="cookies.html" class="nav-link" target="_blank" style="color: #0078d4;">Política de Cookies</a>.
+      </div>
+      <div style="flex: 1 1 25%; text-align: right;">
+        <button id="cookie-accept-btn" style="background: #0078d4; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+   <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timeless Partners</title>
+  <meta name="description" content="Landing page moderna inspirada en Jeton: animaciones, navegación inferior fija y formulario de contacto listo para adaptar." />
+  <meta name="theme-color" content="#e4416d" />
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+
+  <!-- Fuente limpia y moderna (Altone) -->
+  <link rel="preload" href="fonts/Altone-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Altone-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Librería de animación al hacer scroll (AOS) solo para parte visual del cliente -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header class="bottom-nav" role="navigation" aria-label="Navegación principal">
+    <div class="bottom-nav__inner container">
+      <!-- Marca/Logo a la izquierda -->
+      <a class="brand" href="index.html#home" aria-label="Inicio">
+        <img src="./assets/HORIZONTAL_BLANCO.svg" alt="Logo" width="200" height="40" />
+      </a>
+
+      <!-- Menú de navegación (escritorio) -->
+      <nav class="menu" aria-label="Secciones">
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#features">¿Qué hacemos?</a>
+        <a href="index.html#clientes">Clientes</a>
+        <a href="index.html#cobertura">Cobertura</a>
+        <a href="index.html#contact">Contacto</a>
+      </nav>
+
+      <!-- CTA a la derecha (puedes apuntar a registro propio o a otra ruta) -->
+      <div class="cta">
+        <a class="btn btn--primary" href="index.html#contact" role="button" aria-label="Empezar ahora">¡Quiero crecer mi marca!</a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 🔹 Cajón lateral móvil (fuera del header) -->
+  <div id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú móvil" aria-hidden="true">
+    <div class="drawer-content">
+      <nav class="drawer-menu">
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#features">¿Qué hacemos?</a>
+        <a href="index.html#clientes">Clientes</a>
+        <a href="index.html#cobertura">Cobertura</a>
+        <a href="index.html#contact">Contacto</a>
+        <a class="btn btn--primary" href="index.html#contact">¡Quiero crecer mi marca!</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ====================================
+       CONTENIDO PRINCIPAL
+  ===================================== -->
+<main id="home" class="main">
+
+</main>
+  <!-- ====================================
+       FOOTER COMPLETO
+  ===================================== -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="#home">
+          <img src="./assets/HORIZONTAL_BLANCO.svg" alt="Logo" width="200" height="40" />   
+        </a> 
+        <p class="footer-text">Tu crecimiento es nuestro objetivo <strong>¡Escalemos juntos!</strong></p>
+        <p class="footer-text"></p>
+        <small>© <span id="year"></span> Timeless Partners. Todos los derechos reservados.</small>
+      </div>
+      <nav aria-label="Footer menús" class="footer-cols">
+        <div>
+          <h4>Producto</h4>
+          <ul>
+            <li><a href="index.html#features">¿Qué hacemos?</a></li>
+            <li><a href="index.html#productos">Productos y Categorías</a></li>
+            <li><a href="index.html#Como">¿Cómo lo hacemos?</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#clientes">Clientes</a></li>
+            <li><a href="index.html#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terminos.html">Términos</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+    <!-- Banner de Cookies -->
+  <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #f5f5f5; padding: 15px; box-shadow: 0 -2px 5px rgba(0,0,0,0.1); z-index: 9999; font-family: sans-serif; display: none;">
+    <div style="max-width: 960px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+      <div style="flex: 1 1 70%; font-size: 14px; color: #333;">
+        Este sitio utiliza cookies para mejorar su experiencia de navegación y analizar el tráfico. Al continuar, acepta su uso. Consulte nuestra <a href="cookies.html" class="nav-link" target="_blank" style="color: #0078d4;">Política de Cookies</a>.
+      </div>
+      <div style="flex: 1 1 25%; text-align: right;">
+        <button id="cookie-accept-btn" style="background: #0078d4; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+   <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
